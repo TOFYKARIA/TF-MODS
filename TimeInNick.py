@@ -64,7 +64,7 @@ class TimeInNickMod(loader.Module):
     
     async def update_nick(self):
         while self.running:
-            # Получаем текущее время по выбранному часовому поясу
+          
             tz = pytz.timezone(self.timezone)
             current_time = datetime.now(tz).strftime("%H:%M")
             
